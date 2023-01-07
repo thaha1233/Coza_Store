@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- animathion -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>coza Store men</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">coza <Span>Store</Span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Service</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="icon">
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inedxm.html">man</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inedxw.html">woman</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inedxa.html">log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="indexc.html">Contact</a>
+                        </li>
+                        <div class="onc">
+                            <i onclick=" modeDark()" id="moon" class="fa-solid fa-moon"></i>
+                            <i id="sun" class="fa-solid fa-sun"></i>
+
+                        </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="imgs/men1.jpg" class="d-block w-100 mt-5" alt="not">
+                <div class="contemen">
+                    <h1> discounts !!</h1>
+                    <p>It's a new year 2023 </p>
+                    <a href="#">click now</a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="imgs/men2.jpg" class="d-block w-100 mt-5" alt="not">
+            </div>
+            <div class="carousel-item">
+                <img src="imgs/men3.jpg" class="d-block w-100 mt-5" alt="not">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section>
+        <div class="conmen">
+            <h1>new collection</h1>
+            <p>It's a new year 2023 </p>
+
+        </div>
+
+        <img src="imgs/backman.png" class="bkm" alt="">
+
+        <button id="scr"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-9 mt-3">
+                        <h3>jacket </h3>
+                    </div>
+                    <div class="col-md-3">
+                        <!-- Controls -->
+
+                    </div>
+                </div>
+                <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="imgs/j1.png" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        jacket 1</h5>
+                                                    <h5 class="price-text-color">
+                                                        $120.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add
+                                                        to
+                                                        cart</a>
+                                                </p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">More
+                                                        details</a>
+                                                </p>
+
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="imgs/j2.png" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        jacket 2</h5>
+                                                    <h5 class="price-text-color">
+                                                        $249.99</h5>
+                                                </div>
+
+                                                <div class="rating hidden-sm col-md-6">
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add
+                                                        to
+                                                        cart</a>
+                                                </p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">More
+                                                        details</a>
+                                                </p>
+
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="imgs/j3.png" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        jacket 3</h5>
+                                                    <h5 class="price-text-color">
+                                                        $149.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add
+                                                        to
+                                                        cart</a>
+                                                </p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">More
+                                                        details</a>
+                                                </p>
+
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="imgs/j4.png" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        jacket 4</h5>
+                                                    <h5 class="price-text-color">
+                                                        $199.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add
+                                                        to
+                                                        cart</a>
+                                                </p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">More
+                                                        details</a>
+                                                </p>
+
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="css/b1.png" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        blouse 1</h5>
+                                                    <h5 class="price-text-color">
+                                                        $199.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add
+                                                        to
+                                                        cart</a>
+                                                </p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">More
+                                                        details</a>
+                                                </p>
+
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="css/b2.png" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        blouse 1</h5>
+                                                    <h5 class="price-text-color">
+                                                        $199.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add
+                                                        to
+                                                        cart</a>
+                                                </p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">More
+                                                        details</a>
+                                                </p>
+
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="css/b1.png" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        blouse 1</h5>
+                                                    <h5 class="price-text-color">
+                                                        $199.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add
+                                                        to
+                                                        cart</a>
+                                                </p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">More
+                                                        details</a>
+                                                </p>
+
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="css/b3.png" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        blouse4</h5>
+                                                    <h5 class="price-text-color">
+                                                        $199.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add
+                                                        to
+                                                        cart</a>
+                                                </p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">More
+                                                        details</a>
+                                                </p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-9 mt-3">
+                        <h3> Nike Jorden </h3>
+
+                    </div>
+                   
+                <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="imgs/jor1.png" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        Nike Jorden
+</h5>
+                                                    <h5 class="price-text-color">
+                                                        $199.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add
+                                                        to
+                                                        cart</a>
+                                                </p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">More
+                                                        details</a>
+                                                </p>
+
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="imgs/jor2.png" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        Nike Jorden</h5>
+                                                     
+                                                    <h5 class="price-text-color">
+                                                        $249.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add
+                                                        to
+                                                        cart</a>
+                                                </p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">More
+                                                        details</a>
+                                                </p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="imgs/jor3.png" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        Nike Jorden
+                                                    </h5>
+                                                    <h5 class="price-text-color">
+                                                        $149.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add
+                                                        to
+                                                        cart</a>
+                                                </p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">More
+                                                        details</a>
+                                                </p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="imgs/jor4.png" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        Nike Jorden
+                                                    </h5>
+                                                    <h5 class="price-text-color">
+                                                        $120.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add
+                                                        to
+                                                        cart</a>
+                                                </p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">More
+                                                        details</a>
+                                                </p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="imgs/jor5.png" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5> Nike Jorden</h5>
+                                                    <h5 class="price-text-color">
+                                                        $249.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add
+                                                        to
+                                                        cart</a>
+                                                </p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">More
+                                                        details</a>
+                                                </p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="imgs/jor6.png" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                    Nike Jorden</h5>
+                                                    <h5 class="price-text-color">
+                                                        $149.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i
+                                                        class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add
+                                                        to
+                                                        cart</a>
+                                                </p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">More
+                                                        details</a>
+                                                </p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    
+       <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted mt-4">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>this ui is for test</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>coza Store
+            </h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, cum. Eos soluta quae eaque reprehenderit nesciunt nihil veritatis, asperiores quam?
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">new</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">sale</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">for more</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="#">taha ik</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+</body>
+
+</html>
